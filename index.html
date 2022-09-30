@@ -89,19 +89,19 @@
                             </div>
                         </div>
                         <div class="form-bottom contact-form">
-                            <form role="form" action="assets/contact.php" method="post">
+                            <form role="form" method="post" action>
                                 <div class="form-group">
                                     <label class="sr-only" for="contact-email">Project name</label>
-                                    <input type="text" name="Project" placeholder="Project name" class="contact-email form-control ml-5" id="contact-email">
+                                    <input type="text" name="Project" placeholder="Project name" class="contact-email form-control ml-5" id="contact-email" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="contact-subject">Twitter username</label>
-                                    <input type="text" name="subject" placeholder="Twitter username(Include@)" class="contact-subject form-control pr-5" id="contact-subject">
+                                    <input type="text" name="Twitter" placeholder="Twitter username(Include@)" class="contact-subject form-control pr-5" id="contact-subject" required>
 
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="contact-message">News content</label>
-                                    <textarea name="message" placeholder="News content" class="contact-message form-control" id="contact-message"></textarea>
+                                    <textarea name="content" placeholder="News content" class="contact-message form-control" id="contact-message" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-block">Submit</button>
                             </form>
@@ -120,11 +120,6 @@
     <script src="assets/js/jquery.backstretch.min.js"></script>
     <script src="assets/js/retina-1.1.0.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-
-    <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
-
 </body>
 
 </html>
