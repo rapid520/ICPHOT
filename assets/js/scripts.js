@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
         var postdata = $('.contact-form form').serialize();
         $.ajax({
             type: 'POST',
-            url: 'http://124.223.105.144/tougao.htm',
+            url: 'https://124.223.105.144/tougao.htm',
             data: postdata,
             dataType: 'json',
             success: function(json) {
