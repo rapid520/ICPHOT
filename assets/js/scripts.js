@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
             dataType: 'json',
             success: function(json) {
                 if (json) {
-                    alert("We have received your message and will check it as soon as possible")
+                    alert(json)
                     $("form")[0].reset();
                 }
             }
