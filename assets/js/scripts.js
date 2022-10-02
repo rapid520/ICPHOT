@@ -26,10 +26,10 @@ jQuery(document).ready(function() {
             type: 'POST',
             url: 'https://124.223.105.144/tougao.htm',
             data: postdata,
-            dataType: 'json',
-            success: function(json) {
-                if (json) {
-                    alert(json)
+            dataType: 'text',
+            success: function(res) {
+                if (res) {
+                    alert(res)
                     $("form")[0].reset();
                 }
             }
